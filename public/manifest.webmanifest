@@ -1,7 +1,7 @@
 {
   "name": "NaijaPowerCalc",
   "short_name": "PowerCalc",
-  "description": "Free generator & solar sizing, runtime and cost calculator for Nigeria.",
+  "description": "Estimate generator size, solar panels, battery backup and power costs for your Nigerian home.",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#0f4a2c",

@@ -1,0 +1,12 @@
+{
+  "name": "NaijaPowerCalc",
+  "short_name": "PowerCalc",
+  "description": "Estimate generator size, solar panels, battery backup and power costs for your Nigerian home.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0f4a2c",
+  "theme_color": "#158c49",
+  "icons": [
+    { "src": "./favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

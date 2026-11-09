@@ -51,6 +51,36 @@ export function ResultsPanel({ r, fuelType }: { r: Results; fuelType: 'petrol' |
         </p>
       </Card>
 
+      <Card>
+        <h3 className="font-display text-base font-bold text-slate-900 dark:text-slate-50">
+          Compare equipment options
+        </h3>
+        <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">
+          Your estimate: {r.genKVARounded} kVA generator or {r.solarKW} kW solar with a {r.batteryKWh} kWh battery. Check each product’s specifications and suitability before buying.
+        </p>
+        <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">
+          Affiliate disclosure: We may earn a commission if you buy through these links, at no extra cost to you. These links are not a confirmation that a specific product matches your estimate.
+        </p>
+        <div className="mt-3 grid gap-2 sm:grid-cols-2">
+          <a
+            href="https://jmia.io/0NUnYD0"
+            target="_blank"
+            rel="sponsored noopener noreferrer"
+            className="rounded-xl bg-accent-600 px-4 py-3 text-center text-sm font-bold text-white transition hover:bg-accent-700"
+          >
+            Browse generators on Jumia
+          </a>
+          <a
+            href="https://jmia.io/3tqbNca"
+            target="_blank"
+            rel="sponsored noopener noreferrer"
+            className="rounded-xl bg-brand-600 px-4 py-3 text-center text-sm font-bold text-white transition hover:bg-brand-700"
+          >
+            Explore Felicity Solar on Jumia
+          </a>
+        </div>
+      </Card>
+
       {/* Plain-language "What this means for you" */}
       <Card>
         <h3 className="mb-1.5 font-display text-base font-bold text-slate-900 dark:text-slate-50">What this means for you</h3>
