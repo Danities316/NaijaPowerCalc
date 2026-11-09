@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+html, body, #root { height: 100%; }
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.dark body {
+  @apply bg-slate-950 text-slate-100;
+}
+
+.font-display { font-family: 'Sora', 'Inter', system-ui, sans-serif; }
+
+/* Smooth number reveal */
+@keyframes pop {
+  0% { transform: scale(.96); opacity: .4; }
+  100% { transform: scale(1); opacity: 1; }
+}
+.animate-pop { animation: pop .35s ease-out; }
+
+/* Hide scrollbar on horizontal scrollers but keep usable */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+input[type=number] { -moz-appearance: textfield; }
