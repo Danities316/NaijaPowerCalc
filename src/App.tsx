@@ -4,6 +4,7 @@ import { calculate } from './lib/calc'
 import { encodeInputs, decodeInputs, shareText, shareUrl } from './lib/share'
 import { InputsPanel } from './components/InputsPanel'
 import { ResultsPanel } from './components/ResultsPanel'
+import { AdSenseUnit } from './components/AdSenseUnit'
 import { Sun, Moon, Share, Check, Refresh, Bolt } from './components/icons'
 
 type Theme = 'light' | 'dark'
@@ -79,7 +80,9 @@ export default function App() {
           <ResultsPanel r={results} fuelType={input.fuelType} />
         </div>
 
+        <AdSenseUnit slot={import.meta.env.VITE_ADSENSE_SLOT_RESULTS} />
         <BuyingGuide />
+        <AdSenseUnit slot={import.meta.env.VITE_ADSENSE_SLOT_GUIDE} />
         <Footer />
       </main>
     </div>
